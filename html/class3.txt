@@ -1,0 +1,17 @@
+Hyper text markup language.
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <title>WEBPAGE HEADING</head>
+    </head>
+
+    <body>
+        <h1>Heading 1</h1>
+            <p>
+                to bold the text we used <b>TO bold the text</b>
+                <strong>We use strong to highlight important sentence or word</strong>
+            </p>
+    </body>
+</html>

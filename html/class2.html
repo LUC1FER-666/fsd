@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<script>
+    function add()
+    {
+        x=parseInt(document.getElementById("x").value);
+        y=parseInt(document.getElementById("y").value);
+
+        if ((x == 0 || x== 1) && (y==0 || y==1))
+    {
+        document.getElementById("sum").value = x^y;
+        ocument.getElementById("carry").value= x&y;
+
+        }
+        else
+        {
+            alert("Invalid input")
+        }
+    }
+</script>
+<body>
+    <form>
+        <input type="color"><br>
+        
+        <input type="date"><br>
+        
+        <input type="datetime-local"><br><br>
+        
+        
+        <label>Volume between 0 to 100</label>
+        <input type="range"><br><br>
+
+
+        <label>Search Bing </label>
+        <input type="search"  placeholder="SEARCH"><br><br>
+
+
+        <label for="gf">DHINESH's GIRL</label>
+        <select id="gf" name="gf">
+            <option value="Abhijay">Abhijay</option>
+            <option value="Aryan">Aryan</option>
+            <option value="Dhanush">Dhanush</option>
+            <option value="Mayur">Mayur</option>
+            <option value="Rishab">Rishab</option>
+            
+        </select>
+    </form>
+</body>
+</html>

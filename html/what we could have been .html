@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <style>
+        
+        body {
+            font-family: Verdana, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 24px;
+            color: rgb(245, 33, 9);
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+
+        
+        th {
+            font-size: 18px;
+            padding: 10px;
+            border: 2px solid rgb(17, 1, 1);
+            font-weight: bold;
+        }
+
+       
+        th.day {
+            background-color: rgb(20, 8, 183);
+            color: rgb(6, 252, 14);
+        }
+
+        
+        th.time-slot {
+            background-color: rgb(5, 27, 222);
+            color: rgb(7, 81, 229);
+        }
+
+        
+        th.first-row-time-slot {
+            background-color: rgb(13, 145, 234);
+            font-size: 20px;
+            color: darkblue;
+        }
+
+        
+        td {
+            padding: 10px;
+            text-align: center;
+            border: 3px solid rgb(0, 0, 0);
+        }
+
+        
+        td.dld { background-color: rgb(7, 129, 40); color: white; }
+        td.ds { background-color: rgb(6, 89, 144); color: white; }
+        td.office { background-color: gray; color: white; }
+        td.fsd { background-color: rgb(173, 2, 150); color: black; }
+        td.sec { background-color: rgb(197, 81, 9); color: white; }
+        td.dmgt { background-color: rgb(201, 62, 244); color: black; }
+        td.tmt { background-color: rgb(6, 148, 36); color: black; }
+        td.library { background-color: rgb(9, 144, 189); color: black; }
+        td.mentor { background-color: rgb(6, 143, 6); color: black; }
+        td.sports { background-color: teal; color: white; }
+        td.tnt { background-color: rgb(3, 194, 38); color: white; }
+        td.club { background-color: rgb(4, 169, 9); color: white; }
+
+       
+        td.lunch {
+            background-color: rgb(227, 232, 227);
+            font-weight: bold;
+            color: rgb(14, 14, 14);
+        }
+
+        td.break {
+            background-color: rgb(242, 239, 240);
+            font-style: italic;
+            border: 2px solid black;
+        }
+
+        
+        tr:nth-child(even) {
+            background-color: lightyellow;
+        }
+
+        tr:nth-child(odd) {
+            background-color: rgba(5, 210, 242, 0.886);
+        }
+
+        
+        tr:hover {
+            background-color: teal;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Class Timetable</caption>
+        <tr>
+            <th class="day">Day</th>
+            <th class="first-row-time-slot">8:30-9:25</th>
+            <th class="first-row-time-slot">9:25-10:20</th>
+            <th class="first-row-time-slot">Break (10:20-10:45)</th>
+            <th class="first-row-time-slot">10:45-11:40</th>
+            <th class="first-row-time-slot">11:40-12:35</th>
+            <th class="first-row-time-slot">Lunch (12:35-1:50)</th>
+            <th class="first-row-time-slot">1:50-2:40</th>
+            <th class="first-row-time-slot">2:40-3:30</th>
+            <th class="first-row-time-slot">3:30-4:20</th>
+        </tr>
+        <tr>
+            <th class="day">Mon</th>
+            <td class="dld">DLD</td>
+            <td class="ds">DS</td>
+            <td class="break" rowspan="5">TEA BREAK</td>
+            <td class="ds" colspan="2">DS LAB</td>
+            <td class="lunch" rowspan="5">LUNCH</td>
+            <td class="office">OFFICE</td>
+            <td class="fsd">FSD</td>
+            <td class="sec">SEC</td>
+        </tr>
+        <tr>
+            <th class="day">Tues</th>
+            <td class="dmgt">DMGT</td>
+            <td class="tmt">TMT</td>
+            <td class="dld">DLD</td>
+            <td class="ds">DS</td>
+            <td class="office">OFFICE</td>
+            <td class="fsd">FSD</td>
+            <td class="sec">SEC</td>
+        </tr>
+        <tr>
+            <th class="day">Wed</th>
+            <td class="library">Library</td>
+            <td class="mentor">Mentor</td>
+            <td class="sports">Sports</td>
+            <td class="tnt">TNT</td>
+            <td class="dld">DLD</td>
+            <td class="ds">DS</td>
+            <td class="sec">SEC</td>
+        </tr>
+        <tr>
+            <th class="day">Thrs</th>
+            <td class="dmgt">DMGT</td>
+            <td class="mentor">MENTOR</td>
+            <td class="fsd">FSD</td>
+            <td class="office">OFFICE</td>
+            <td class="office">OFFICE</td>
+            <td class="library">Library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="day">Fri</th>
+            <td class="dld" colspan="2">DLD LAB</td>
+            <td class="dmgt">DMGT</td>
+            <td class="tnt">TNT</td>
+            <td class="office">OFFICE</td>
+            <td class="sports">SPORTS</td>
+            <td class="club">Club</td>
+        </tr>
+    </table>
+</body>
+</html>

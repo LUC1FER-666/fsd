@@ -1,0 +1,94 @@
+How many levels are there in CSS?
+    1. Internal (document)
+    2. External 
+    3. Inline 
+
+Style Specification format:
+    1. Inline style
+    2. Document style
+    3. Selector Forms
+        1. simple selector form
+        2. Class Selector
+        3. Generic selector
+        4. id Selector
+        5. Contextual Selectors
+        6. Pseudo classes
+        7. Universal Selector
+    
+    
+
+(i) Simple Selector Forms: 
+        the property values in the rule apply to all occurences of the named element.
+        the eleector could be a list of elements names seperated by commas in which case the property values apply 
+        to all occurences of all the named elements.
+
+        Syntax:
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <style type="text/css">
+            h1{
+                color: red; text-align : center;}
+            h2,p{
+                color: green; text-align: center;
+            }
+
+
+        </style>
+        <body>
+            <h1>OLA HOW ARE U</h1>
+            <h2>DO YOU WNAT TO BUILD A SNOWMAN?</h2>
+            <p>wubba lubba dub dub</p>
+        </body>
+        </html>
+
+(ii)Class Selectors:
+    the property values in the rule apply to all occurences of the class call
+
+
+
+
+(iii)Generic Selectors:
+    It is convenient to have a class of style specifications that applies to the content of more than one kind of tag
+    It is defined without a tag name in its Selector
+    Without the tag name, the name of the generic class beigns with a period.
+    
+    <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <style type="text/css">
+            .one{color: red}
+    
+    
+        </style>
+        <body>
+            <h1>OLA HOW ARE U</h1>
+            <h2>DO YOU WNAT TO BUILD A SNOWMAN?</h2>
+            <p>wubba lubba dub dub</p>
+        </body>
+        </html>
+
+(iv) id Selctors
+
+
+
+
+
+
+
+
+
+P: First-Child{property-value list}
+The properties in the list are applied to the first child element of teach element.
+
+p:last-child{property-value list}
+The properties in the list ore applied to the last child element of each p element.
+

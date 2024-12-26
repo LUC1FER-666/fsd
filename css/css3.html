@@ -1,0 +1,48 @@
+<pre>Font Families
+
+1. The font family property is used to specify a list of fot names
+2. The browser uses the first font in the list that it supports.
+3. Ariel, Hevetica, Futura
+4. A generic font can be specified as a font family value
+5. eg. Times New Roman.
+
+</pre>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            margin:20px;
+        }
+        h1{
+            font: bold 24px/1.5 "Ariel",sans-serif;
+        }
+        .font-family{
+            margin-bottom: 15px;
+        }
+        #p1{
+            font-size: small;
+        }
+        #p2{
+            font-size: medium;
+        }
+        #p3{
+            font-size: x-large;
+            font-variant: small-caps;
+            font-weight: 900;
+        }
+        #p4{
+            font-size: 624px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Available Font Families</h1>
+    <div class="font-family" style="font-family: Arial,sans-serif;" id="p4">Arial</div>
+    <div class="font-family" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" id="p3">small caps and x-large <br>ULTRA BOLD!!!!</div>
+</body>
+</html>

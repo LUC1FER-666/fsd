@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+<form action="/submit" method="POST" enctype="multipart/form-data" autocomplete="on">
+
+    <fieldset> 
+        <legend>Personal Interests</legend>
+        
+                <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" size="30" maxlength="50" placeholder="Enter your full name" required autocomplete="name">
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required autocomplete="off">
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" maxlength="20" placeholder="Enter password" required autocomplete="off" value="readonlypass" readonly>
+        <br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <!-- Interests -->
+        <label>Interests:</label>
+        <input type="checkbox" id="music" name="interests" value="Music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="sports" name="interests" value="Sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="art" name="interests" value="Art">
+        <label for="art">Art</label>
+        <br><br>
+
+        <!-- Country Selection -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" size="4" multiple>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <option value="germany">Germany</option>
+        </select>
+    </fieldset>
+
+    <br>
+
+    <!-- Upload Profile Picture -->
+    <label for="profile">Upload Profile Picture:</label>
+    <input type="file" id="profile" name="profile[]" multiple>
+    <br><br>
+
+    <!-- Date of Birth -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" min="1920-01-01" max="2022-12-31">
+    <br><br>
+
+    <!-- Favorite Color -->
+    <label for="color">Favorite Color:</label>
+    <input type="color" id="color" name="color">
+    <br><br>
+
+    <!-- Age Range -->
+    <label for="age">Age:</label>
+    <input type="range" id="age" name="age" min="0" max="100" oninput="document.getElementById('ageOutput').value=this.value">
+    <output id="ageOutput">50</output>
+    <br><br>
+
+    <!-- Phone Number -->
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+    <br><br>
+
+    <!-- Personal Website -->2
+    <label for="website">Personal Website:</label>
+    <input type="url" id="website" name="website" placeholder="https://example.com">
+    <br><br>
+
+    <!-- Number of Children -->
+    <label for="children">Number of Children:</label>
+    <input type="number" id="children" name="children" min="0" max="10">
+    <br><br>
+
+    <!-- Search Form -->
+    <label for="search">Search:</label>
+    <input type="search" id="search" name="search" placeholder="Search...">
+    <br><br>
+
+    <!-- Hidden Input -->
+    <input type="hidden" name="userID" value="12345">
+
+    <!-- Additional Comments -->
+    
+        
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments"></textarea>
+        <br><br>
+
+        <!-- City Datalist -->
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" list="citylist" placeholder="Choose a city">
+        <datalist id="citylist">
+            <option value="New York">
+            <option value="Los Angeles">
+            <option value="Chicago">
+        </datalist>
+    
+    <br>
+
+    <!-- Buttons -->
+    <input type="image" src="submit-button.png" alt="Submit" width="100" height="50">
+    <input type="reset" value="Reset">
+    <button type="button" onclick="alert('Custom Action')">Custom Action</button>
+    <br><br>
+
+</form>
+
+</body>
+</html>
